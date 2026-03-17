@@ -1,0 +1,109 @@
+/*Skryuwer :  Mg Beukes*/
+
+:root {
+  --bg: #f7f3e8;
+  --surface: #ffffff;
+  --primary: #2f6b2f;
+  --accent: #c68c35;
+  --text: #2b2b2b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*Die image somer in die element gesit vir die body vir nou totdat better opsie gevind kan word */
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  color: var(--text);
+  background: url("../assets/images/cowTongue.png") center / cover no-repeat fixed;
+}
+
+header,
+main,
+footer {
+  width: min(1000px, 92%);
+  margin: 0 auto;
+}
+
+header {
+  padding: 1.2rem 0 0.8rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  background: var(--primary);
+  padding: 0.45rem 0.7rem;
+  border-radius: 6px;
+}
+
+main {
+  background: var(--surface);
+  padding: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1rem;
+}
+
+h1,
+h2 {
+  color: #234f23;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 0.8rem 0;
+}
+
+.card {
+  background: #faf6ee;
+  border-left: 4px solid var(--accent);
+  padding: 0.8rem;
+  margin: 0.7rem 0;
+  border-radius: 6px;
+}
+
+label {
+  display: block;
+  margin-top: 0.8rem;
+  font-weight: 600;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 0.55rem;
+  margin-top: 0.3rem;
+  border: 1px solid #c8c8c8;
+  border-radius: 6px;
+  font: inherit;
+}
+
+button {
+  margin-top: 1rem;
+  background: var(--primary);
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+#result {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  background: #edf7e7;
+  border-left: 4px solid var(--primary);
+  border-radius: 6px;
+}

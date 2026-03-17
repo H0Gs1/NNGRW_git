@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="af">
+<!--skrywer  :MG Beukes-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bereken verwagte geboortedatums vir koeie, skape, perde en ander plaasdiere.">
+  <meta name="keywords" content="draagtigheid, geboortedatum, bees, skaap, perd, boerdery">
+  <meta name="author" content="Mg Beukes">
+  <title>Tuis | Veedragtigheid Berekenaar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Hoof navigasie -->
+  <header>
+    <h1>Veedragtigheid Berekenaar</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Tuis</a></li>
+        <li><a href="oor-ons.html">Oor Ons</a></li>
+        <li><a href="produkte.html">Funksies</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+        <li><a href="werfkaart.html">Werfkaart</a></li>
+      </ul>
+    </nav>
+  </header>
+<!--Hoof bladsy wat gebruiker gaan vra vir die datum watse dier dit is -->
+  <main>
+    <h2>Bereken verwagte geboortedatum</h2>
+    <p>Vul die dier en dekdatum in om te sien wanneer die boer moet begin voorberei vir geboorte.</p>
+
+    <form id="gestation-form">
+      <label for="animal">Kies dier</label>
+      <select id="animal" required>
+        <option value="">-- Kies --</option>
+        <option value="cow">Koei</option>
+      </select>
+
+      <label for="mating-date">Dekdatum</label>
+      <input type="date" id="mating-date" required>
+
+      <button type="submit">Bereken</button>
+    </form>
+
+    <p id="result">Resultaat sal hier verskyn.</p>
+  </main>
+<!--Script wat gaan hanteer die verwerking van die datums -->
+  <script src="script.js"></script>
+</body>
+</html>
