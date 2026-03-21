@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#inhoud">Spring na inhoud</a>
 <!-- Hoof navigasie -->
 <header>
     <h1>Veedragtigheid Berekenaar</h1>
@@ -21,19 +22,40 @@
         <li><a href="index.html">Tuis</a></li>
         <li><a href="oor-ons.html">Oor Ons</a></li>
         <li><a href="produkte.html">Funksies</a></li>
-        <li><a href="kontak.html">Kontak</a></li>
+        <li><a href="kontak.html" aria-current="page">Kontak</a></li>
+        <li><a href="eksterne-inligting.html">Eksterne Inligting</a></li>
+        <li><a href="krediete.html">Krediete</a></li>
         <li><a href="werfkaart.html">Werfkaart</a></li>
       </ul>
     </nav>
   </header>
 
 <!--Al die kontak informasie wat benodig word gaan hier gevind word-->
-  <main>
+  <main id="inhoud">
     <h2>Kontak</h2>
-    <p><strong>E-pos:</strong></p>
-    <p><strong>Telefoon:</strong></p>
-    <p><strong>Werksure:</strong></p>
+    <section class="section card">
+      <p><strong>E-pos:</strong> fakeepos@gmail.com</p>
+      <p><strong>Telefoon:</strong> 012 345 6789</p>
+      <p><strong>Werksure:</strong> 24/7 365</p>
+    </section>
+
+    <section class="section">
+      <h3>Stuur ’n boodskap</h3>
+      <form>
+        <label for="naam">Naam</label>
+        <input id="naam" name="naam" type="text" placeholder="Jou naam" required>
+
+        <label for="boodskap">Boodskap</label>
+        <input id="boodskap" name="boodskap" type="text" placeholder="Waarmee kan ons help?" required>
+
+        <button class="btn" type="submit">Stuur</button>
+      </form>
+    </section>
   </main>
 
+  <footer>
+    <p><strong>Veedragtigheid Berekenaar</strong></p>
+    <p>© 2026 MG Beukes</p>
+  </footer>
 </body>
 </html>

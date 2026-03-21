@@ -12,28 +12,92 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#inhoud">Spring na inhoud</a>
 <!-- Hoof navigasie -->
 <header>
     <h1>Veedragtigheid Berekenaar</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Tuis</a></li>
-        <li><a href="oor-ons.html">Oor Ons</a></li>
-        <li><a href="produkte.html">Funksies</a></li>
-        <li><a href="kontak.html">Kontak</a></li>
-        <li><a href="werfkaart.html">Werfkaart</a></li>
-      </ul>
-    </nav>
-  </header>
+	    <nav>
+		      <ul>
+		        <li><a href="index.html">Tuis</a></li>
+		        <li><a href="oor-ons.html" aria-current="page">Oor Ons</a></li>
+		        <li><a href="produkte.html">Funksies</a></li>
+			        <li><a href="kontak.html">Kontak</a></li>
+			        <li><a href="eksterne-inligting.html">Eksterne Inligting</a></li>
+			        <li><a href="krediete.html">Krediete</a></li>
+			        <li><a href="werfkaart.html">Werfkaart</a></li>
+			      </ul>
+			    </nav>
+			  </header>
 <!--Gee n kort beskrywing wat die webtuiste oor gaan -->
-  <main>
+  <main id="inhoud">
     <h2>Doel van die webtuiste</h2>
     <p>Hierdie webtuiste help boere om dra- en geboortedatums van verskillende diere op te spoor.</p>
-    <div class="card">
-      <p><strong>Probleem:</strong> Boere vergeet soms presiese geboortetye vir dragtige diere.</p>
-      <p><strong>Oplossing:</strong> Die stelsel bereken 'n verwagte geboortedatum en herinner wanneer voorbereiding moet begin.</p>
-      <p><strong>Diere:</strong> Koeie, skape,</p>
-    </div>
-  </main>
-</body>
-</html>
+	    <section class="section card">
+	      <p><strong>Probleem:</strong> Boere vergeet soms presiese geboortetye vir dragtige diere.</p>
+	      <p><strong>Oplossing:</strong> Die stelsel bereken 'n verwagte geboortedatum en herinner wanneer voorbereiding moet begin.</p>
+		      <p><strong>Diere:</strong> Koeie, skape, perde en bokke.</p>
+	      <button
+	        id="oor-ons-toggle"
+	        class="btn btn--secondary"
+	        type="button"
+	        aria-expanded="false"
+	        aria-controls="oor-ons-panel"
+	      >
+	        Lees meer
+	      </button>
+	    </section>
+
+	    <!-- wys niks totdat jy "Lees meer" druk; druk weer om te versteek -->
+	    <section id="oor-ons-panel" class="section" hidden>
+	      <!-- SKRYF HIER: Verander/voeg punte by in die lys hieronder -->
+	      <div class="card">
+	        <h3>Bykomende Inligting</h3>
+			  <p>
+				Hierdie webtuiste is spesifiek ontwerp om boere wat met diere werk te
+				ondersteun deur die proses van dragtigheidsbestuur eenvoudiger en meer akkuraat te maak.
+				Die hoofdoel van die stelsel is om die verwagte geboortedatum van diere te bereken deur gebruik te maak van die gemiddelde dragtigheidsperiode van elke spesifieke dier,
+				soos beeste, skape, bokke en ander plaasdiere.
+			  </p>
+			  <p>
+			  	Wanneer ’n gebruiker die dekdatum of kunsmatige inseminasiedatum invoer,
+			  	gebruik die stelsel voorafbepaalde gemiddelde dragtigheidslengtes om ’n beraamde geboortedatum te bereken.
+			 	Byvoorbeeld, beeste het gemiddeld ’n dragtigheidsperiode van ongeveer 283 dae,
+			  	terwyl skape en bokke gewoonlik rondom 150 dae dra. Hierdie waardes word gebruik om ’n betroubare skatting te gee van wanneer die dier waarskynlik sal geboorte skenk.
+			  </p>
+			  <p>
+			  	Benewens die basiese berekening, bied die webtuiste ook ’n reeks bykomende funksies om die gebruiker beter te help voorberei.
+			  	Die stelsel kan outomaties herinnerings skep en stuur, insluitend ’n e-pos kennisgewing ongeveer een week voor die verwagte geboortedatum.
+			  	Hierdie kennisgewing help die boer om betyds voorbereidings te tref, soos om ’n geskikte en veilige geboorte-omgewing reg te kry, die dier dop te hou vir tekens van arbeid,
+			  	en seker te maak dat alle nodige toerusting en hulp beskikbaar is.
+			  </p>
+			  <p>
+			  	Verder kan die webtuiste ook rekordhouding ondersteun deur vorige dragtighede en geboortes te stoor.
+			 	Dit maak dit makliker vir boere om patrone te identifiseer, gesondheid en produktiwiteit te monitor, en beter bestuursbesluite te neem in die toekoms.
+			  	Sommige weergawes van die stelsel kan selfs ekstra wenke en riglyne verskaf oor hoe om diere tydens dragtigheid en geboorte te versorg.
+			  </p>
+			  <p>
+			  	Deur tegnologie op hierdie manier te gebruik,
+			  	help die webtuiste om risiko’s te verminder, tyd te bespaar en die algehele sukses van diereboerdery te verbeter.
+			  	Dit is ’n praktiese hulpmiddel wat daarop gemik is om boere meer beheer, beter beplanning en groter gemoedsrus te gee.
+			  </p>
+		  </div>
+
+	      <!-- Toekomstige area vir boer se eie notas te kan maak -->
+	      <!--<label for="oor-ons-notas">Notas</label>
+	      <textarea
+	        id="oor-ons-notas"
+	        name="oor_ons_notas"
+	        rows="5"
+	        placeholder="Skryf hier wat jy wil hê moet wys wanneer 'Lees meer' oop is..."
+	      ></textarea>-->
+	    </section>
+	  </main>
+
+  <footer>
+	  <p><strong>Veedragtigheid Berekenaar</strong></p>
+	  <p>© 2026 MG Beukes</p>
+  </footer>
+
+	  <script src="script.js"></script>
+	</body>
+	</html>

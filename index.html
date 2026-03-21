@@ -12,29 +12,35 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#inhoud">Spring na inhoud</a>
 <!-- Hoof navigasie -->
   <header>
     <h1>Veedragtigheid Berekenaar</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Tuis</a></li>
+        <li><a href="index.html" aria-current="page">Tuis</a></li>
         <li><a href="oor-ons.html">Oor Ons</a></li>
         <li><a href="produkte.html">Funksies</a></li>
         <li><a href="kontak.html">Kontak</a></li>
+        <li><a href="eksterne-inligting.html">Eksterne Inligting</a></li>
+        <li><a href="krediete.html">Krediete</a></li>
         <li><a href="werfkaart.html">Werfkaart</a></li>
       </ul>
     </nav>
   </header>
 <!--Hoof bladsy wat gebruiker gaan vra vir die datum watse dier dit is -->
-  <main>
+  <main id="inhoud">
     <h2>Bereken verwagte geboortedatum</h2>
     <p>Vul die dier en dekdatum in om te sien wanneer die boer moet begin voorberei vir geboorte.</p>
 
-    <form id="gestation-form">
+    <form id="gestation-form" class="section">
       <label for="animal">Kies dier</label>
       <select id="animal" required>
         <option value="">-- Kies --</option>
         <option value="cow">Koei</option>
+        <option value="sheep">Skaap</option>
+        <option value="horse">Perd</option>
+        <option value="goat">Bok</option>
       </select>
 
       <label for="mating-date">Dekdatum</label>
@@ -43,8 +49,13 @@
       <button type="submit">Bereken</button>
     </form>
 
-    <p id="result">Resultaat sal hier verskyn.</p>
+    <p id="result" role="status" aria-live="polite">Resultaat sal hier verskyn.</p>
   </main>
+
+  <footer>
+    <p><strong>Veedragtigheid Berekenaar</strong></p>
+    <p>© 2026 MG Beukes</p>
+  </footer>
 <!--Script wat gaan hanteer die verwerking van die datums -->
   <script src="script.js"></script>
 </body>
