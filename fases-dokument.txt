@@ -1,0 +1,194 @@
+FASE 1 DOKUMENT
+Navorsing en Funksionele Beplanning van Boerdery-Webtuiste
+Student Naam: MG Beueks
+Studentenommer: 2024050442
+Boerdery-tipe gekies: Veeboerdery (beeste, skape, perde en ander plaasdiere)
+Datum: 25 Maart 2026
+
+---
+
+INHOUDSOPGAWE
+
+1. Inleiding
+2. Beskrywing van die Boerdery
+3. Doel van die Webtuiste
+4. Beplande Funksies van die Webtuiste
+5. Webblad-Uitlegte
+6. Voorgestelde Navigasiestruktuur
+7. Samevatting
+
+---
+
+
+1. INLEIDING
+
+
+Vir hierdie projek het ek 'n veeboerdery gekies as tema, met fokus op
+dragtigheid en geboorte-beplanning vir plaasdiere soos koeie, skape, perde en
+verdere diere wat op 'n plaas voorkom. Die boerdery-tipe is gekies omdat dit
+prakties en algemeen is in Suid-Afrika, en omdat goeie rekordhouding en
+beplanning 'n direkte invloed het op dieregesondheid, arbeidsbeplanning en
+produksie.
+Die algemene doel van die projek is om 'n werkende, multi-bladsy HTML5-webtuiste
+te ontwikkel wat 'n boer help om verwagte geboortedatums te bereken, sodat die
+boer betyds kan voorberei.
+Ek het die gekies omdat my pa n boer is wat met vee werk en hy n fisiese kaart
+gehad vir dier geboortes en ek het gedink dit gaan makliker wees vir die boer as
+hy nie hoef n kaart te koop nie en sekker maak dit word beseer nie en dit
+implaas op n webtuiste is wat hy net kan opsoek.
+Die webtuiste bestaan uit: Tuis, Oor Ons, Funksies, Kontak en Werfkaart.
+Vir nou maar gaan groeie met ander bladsye vir wat nodig gaan word.
+
+---
+
+
+2. BESKRYWING VAN DIE BOERDERY
+
+
+'n Veeboerdery behels die aanhou, teel en bestuur van diere vir produkte
+Belangrike take:
+- Aankope: beplanning om funksionaliteit te bring vir voer, medikasie,
+toerusting
+- Voorraadbeheer
+- Produksiemonitering
+Probleem: Moeilik om geboortedatums akkuraat te bepaal
+, die webtuiste vat aan daardie missie om dink werk te doen vir die boereso hulle oor minder hoef te oor stres.
+Oplossing: Digitale hulpmiddel vir berekening van diere geboortedatums en om
+watter week die boer moet verwag die dier geboorte gee.
+
+---
+
+
+3. DOEL VAN DIE WEBTUISTE
+
+
+Hoofdoel: Bereken verwagte geboortedatum.
+Sekondêr: Inligting en ondersteuning.
+
+---
+
+
+4. BEPLANDE FUNKSIES
+
+
+Basiese bladsye:
+- Tuisblad (berekenaar)
+- Oor Ons
+- Funksies
+- Kontak
+- Werfkaart
+Interaktiewe funksies:
+- Dragtigheid-berekening
+- Multi-dier ondersteuning
+
+---
+
+
+5. Webblad-Uitlegte
+
+
+Tuisblad:
+- Kies dier
+- Dekdatum
+- Bereken knoppie
+- Resultaat
+Oor Ons:
+- Probleem en oplossing
+Funksies:
+- Berekening van dekking vir diere
+Kontak:
+
+---
+
+
+6. Voorgestelde Navigasiestruktuur
+
+
+Tuis
+- Oor Ons
+- Funksies
+- Kontak
+- Werfkaart---
+7. SAMEVATTING
+Hierdie webtuiste help boere om geboortedatums te bereken en beter te beplan.
+Dit verminder foute en kan later uitgebrei word met meer funksies.
+Soos dit nou staan is dit net vir die gebruik van uitwerking van vee
+geboortedatums.
+
+----------------------
+FASE 2
+-----------------------
+
+
+7. Opdateering/finalisasie van CSS
+
+
+Tydens fase 2 was daar opdateering gemaak met die css en finalisasie van n style.
+
+EK het belsuit om in simplistiese style te werk soos ander boere webtuiste wat al reeds bestaan.
+Die kleure skema is ook nie te helder nie want meeste boere gee nie om oor mooi of oulike kleure nie,
+die gebruik van die kleur groen en geel het ek al ervaar vind meeste boere die meeste gerieflik, dalk omdat dit
+hulle aan Jhon Deere laat dink.
+
+Daar is nou n standaard op di volgende:
+Knoppies
+Kaartjies
+Afdelings
+Sweef-effekte
+
+So elke geval van die gebruik van die bogenomde sal dieselfde voel en lyk
+
+----
+
+8. Github
+
+
+Die Fase het ook begin om gestoor te word op n Github vir die stoor en die beveiliging van die code vir die webtuiste
+hier :
+https://github.com/H0Gs1/NNGRW_git
+
+n private repository op my persoonlike Github account
+
+----
+
+9. Bykommende bladsye en logika
+
+
+Eksterne inligting -
+Die byvoeging van die bladsy eksterne inligting werk as visuele hulp middel vir die boer om net skoon die
+gemiddelde swanger tyd van elke dier wat die swebtuiste kan mee werk
+
+Die bied ook as n blad na eksterne link vir die boer om te volg met na ekstra inligting wat hulle kan help met die
+besluitneming van die diere wat hulle moet sorg. Dit is die hoof doel van die webtuiste is om die boer te help met die
+herinering en hulle verstand te verbetter van goeie besluit neming.
+
+Krediete -
+Daar is n byvoeging van n bladsy vir krediet, die is net n stoor plek waar ek al my links en studies wat ek gebruik het
+vir die maak van die webtuiste om krediet te gee aan alle partye en nie enige ander se werk te neem as my eie nie.
+
+---
+
+
+9.1. JavaScript
+
+
+Die byvoeging van JavaScript is ook al reeds bereik in die weergawe om die logika te hanteer en die bewerking kan al
+reeds gemaak te word om die presiese datum te verskaf van die gemiddeld swanger tyd en kan dit al visuele voorstel aan
+die gebruiker
+
+Meer in diepte verduideliking van JavaScript gaan in Fase 3 gegee word wanneer die finaliseer is, is nog onder
+opdateering
+
+---
+
+
+10. Opdateerde Navigasiestruktuur
+
+
+Tuis
+-Oor ons
+-Funksies
+-Kontak
+-Eksterne Inligting
+-Krediete
+-Werfkaart
