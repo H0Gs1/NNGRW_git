@@ -192,3 +192,82 @@ Tuis
 -Eksterne Inligting
 -Krediete
 -Werfkaart
+
+----------------------
+FASE 3
+-----------------------
+
+
+11. Responsiewe uitleg
+
+
+In Fase 3 is die webtuiste verder verbeter om meer mobiel-vriendelik te wees.
+Daar is ekstra medianavrae en uitleg aanpassings bygevoeg sodat die webtuiste netjies bly op kleiner skerms.
+
+Voorbeelde:
+- Tabel areas kan nou horisontaal scroll op selfone (sodat die tabel nie breek nie).
+- Vorms kan van 2 kolomme na 1 kolom skuif op kleiner skerms.
+- Basiese “small screen” aanpassings vir spasie en teks.
+
+----
+
+12. Tabelle (Pryse, Voorraad en Produksiedata)
+
+
+Winkel:
+- Pryse-tabel vir produkte (voer, medikasie, toerusting).
+- Voorraad-tabel (opsomming) vir vinnige kyk.
+
+Produksiedata:
+- ’n Maandelikse produksie-oorsig tabel (bv. gedek, geboortes, verliese en notas).
+
+Vir beide van die bladsye gebruik dit hardekode want geen databasis bestaan wat die data kan stoor nie
+Dit is nou heeltemal net vir demonstrasie doeleindes om vir die gebruiker te wys hoe gaan dit lyk wanneer regte data
+ontvang gaan word en in die databasis gestoor gaan word.
+
+----
+
+13. Webvorms en basiese validasie
+
+
+Minstens 2 webvorms is ontwerp en eenvoudige validasie is bygevoeg met JavaScript.
+
+Kontakvorm:
+- Velde: Naam, E-pos, Boodskap.
+- Validasiereels: Naam min 2 karakters; E-pos moet geldig wees; Boodskap lengte is vorseer,terminste 10 karakters.
+
+Bestelvorm (Winkel):
+- Velde: Naam, E-pos, Selfoon, Produk, Hoeveelheid, Aflewering/afhaal, Adres (as aflewering).
+- Validasiereels: Selfoon moet ten minste 10 syfers wees; Hoeveelheid tussen 1 en 999; Adres word net vereis as “Aflewering” gekies is.
+
+E-pos validasie:
+- Funksie isValidEmail is gebruik om te toets of ’n geldige e-pos ingevoer is
+
+----
+
+14. Bykomende bladsye en navigasie
+
+
+Die navigasie op al die bestaande bladsye is ook opdateer om die nuwe bladsye in te sluit, en die werfkaart is aangepas.
+
+----
+
+15. Wat word op die webtuiste “verkoop”?
+
+
+Vir die projek se winkel-afdeling is besluit om die volgende te verkoop:
+- Voer (bv. bees voer, skaap lek)
+- Medikasie (bv. ontwurm middel, jodium spray)
+- Toerusting (bv. kalwingsketting stel, oormerke)
+
+----
+
+15.1. Maantjie
+
+Byvoeging van die maantjie wat al die bestelling groepeer vir die gebruiker en die som totaal gaan gee.
+Die laat toe vir laaste hersiening voor aan gaan met die betaalling van die produkte
+
+
+Soos dit nou is, is die javascript om te onthou van die inkopies nog nie gedoen so geen rekord gaan gehou word van die
+bestellings nie
+Volgende Fase sal die funksionaliteit in bring.

@@ -22,6 +22,8 @@
         <li><a href="index.html">Tuis</a></li>
         <li><a href="oor-ons.html">Oor Ons</a></li>
         <li><a href="produkte.html">Funksies</a></li>
+        <li><a href="winkel.html">Winkel</a></li>
+        <li><a href="produksie.html">Produksiedata</a></li>
         <li><a href="kontak.html" aria-current="page">Kontak</a></li>
         <li><a href="eksterne-inligting.html">Eksterne Inligting</a></li>
         <li><a href="krediete.html">Krediete</a></li>
@@ -41,14 +43,18 @@
 
     <section class="section">
       <h3>Stuur ’n boodskap</h3>
-      <form>
-        <label for="naam">Naam</label>
-        <input id="naam" name="naam" type="text" placeholder="Jou naam" required>
+      <form id="contact-form" class="section" novalidate>
+        <label for="contact-name">Naam</label>
+        <input id="contact-name" name="naam" type="text" placeholder="Jou naam" autocomplete="name" minlength="2" required>
 
-        <label for="boodskap">Boodskap</label>
-        <input id="boodskap" name="boodskap" type="text" placeholder="Waarmee kan ons help?" required>
+        <label for="contact-email">E-pos</label>
+        <input id="contact-email" name="epos" type="email" placeholder="naam@voorbeeld.co.za" autocomplete="email" required>
+
+        <label for="contact-message">Boodskap</label>
+        <textarea id="contact-message" name="boodskap" rows="5" placeholder="Waarmee kan ons help?" minlength="10" required></textarea>
 
         <button class="btn" type="submit">Stuur</button>
+        <p id="contact-status" role="status" aria-live="polite" class="muted">Status: gereed.</p>
       </form>
     </section>
   </main>
@@ -57,5 +63,7 @@
     <p><strong>Veedragtigheid Berekenaar</strong></p>
     <p>© 2026 MG Beukes</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

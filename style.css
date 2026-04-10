@@ -319,6 +319,16 @@ textarea {
 }
 
 /* Tabel (eksterne inligting) */
+.table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: var(--radius-sm);
+}
+
+.table-wrap .table {
+  min-width: 760px;
+}
+
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -344,6 +354,21 @@ textarea {
 
 .table tr:last-child td {
   border-bottom: none;
+}
+
+/* Vorm uitleg (Winkel/Bestelvorm) */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.form-grid label {
+  margin-top: 0;
+}
+
+.form-grid__full {
+  grid-column: 1 / -1;
 }
 
 /* Eksterne bronne: ekstra info wat spesifiek by 'n skakel hoort */
@@ -414,6 +439,12 @@ textarea {
   }
   .credit-image__img {
     height: 220px;
+  }
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .form-grid__full {
+    grid-column: auto;
   }
 }
 
@@ -497,6 +528,22 @@ footer p {
   margin: 0.2rem 0;
   color: var(--muted);
   font-size: 0.95rem;
+}
+
+@media (max-width: 520px) {
+  header h1 {
+    font-size: 1.55rem;
+  }
+  nav a {
+    padding: 0.42rem 0.6rem;
+  }
+  main {
+    padding: 1rem;
+  }
+  .table th,
+  .table td {
+    padding: 0.55rem 0.6rem;
+  }
 }
 
 /* FASE 1 dokument: skuif die interne CSS hierheen vir 'n eksterne stylblad. */

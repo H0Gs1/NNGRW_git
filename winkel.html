@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="af">
+<!--skrywer  :MG Beukes-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Winkel vir voer, medikasie en toerusting met pryse en voorraad.">
+  <meta name="keywords" content="winkel, pryse, voorraad, voer, medikasie, toerusting, boerdery">
+  <meta name="author" content="Mg Beukes">
+  <title>Winkel | Veedragtigheid Berekenaar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#inhoud">Spring na inhoud</a>
+
+<header>
+  <h1>Veedragtigheid Berekenaar</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Tuis</a></li>
+      <li><a href="oor-ons.html">Oor Ons</a></li>
+      <li><a href="produkte.html">Funksies</a></li>
+      <li><a href="winkel.html" aria-current="page">Winkel</a></li>
+      <li><a href="produksie.html">Produksiedata</a></li>
+      <li><a href="kontak.html">Kontak</a></li>
+      <li><a href="eksterne-inligting.html">Eksterne Inligting</a></li>
+      <li><a href="krediete.html">Krediete</a></li>
+      <li><a href="werfkaart.html">Werfkaart</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="inhoud">
+  <section class="hero">
+    <div class="hero__content">
+      <p class="eyebrow">Winkel</p>
+      <h2>Pryse en voorraad</h2>
+      <p>
+        Hierdie afdeling sluit aan by die boerdery se "Aankope" doel (voer, medikasie, toerusting).
+      </p>
+      <div class="pill-row" aria-label="Kategoriee">
+        <span class="pill">Voer</span>
+        <span class="pill">Medikasie</span>
+        <span class="pill">Toerusting</span>
+      </div>
+    </div>
+    <figure class="hero__media">
+      <img src="cowTongue.png" alt="'n Bees op die plaas">
+    </figure>
+  </section>
+
+  <section class="section card">
+    <h3>Produklys</h3>
+
+    <div class="table-wrap" role="region" aria-label="Produk pryse en voorraad (horizontale scroll op selfoon)">
+      <table class="table">
+        <thead>
+        <tr>
+          <th>Produk</th>
+          <th>Kategorie</th>
+          <th>Eenheid</th>
+          <th>Prys (ZAR)</th>
+          <th>Voorraad</th>
+          <th>Nota</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Bees voer</td>
+          <td>Voer</td>
+          <td>50 kg sak</td>
+          <td>R 415</td>
+          <td>18</td>
+          <td>Hou droog; wissel per seisoen.</td>
+        </tr>
+        <tr>
+          <td>Skaap lek</td>
+          <td>Voer</td>
+          <td>20 kg sak</td>
+          <td>R 189</td>
+          <td>26</td>
+          <td>Minerale aanvulling.</td>
+        </tr>
+        <tr>
+          <td>Ontwurm middel (multi)</td>
+          <td>Medikasie</td>
+          <td>1 L</td>
+          <td>R 325</td>
+          <td>9</td>
+          <td>Volg doseringsriglyne.</td>
+        </tr>
+        <tr>
+          <td>Jodium spray</td>
+          <td>Medikasie</td>
+          <td>250 ml</td>
+          <td>R 89</td>
+          <td>34</td>
+          <td>Vir wondversorging.</td>
+        </tr>
+        <tr>
+          <td>Kalwingsketting stel</td>
+          <td>Toerusting</td>
+          <td>Stel</td>
+          <td>R 560</td>
+          <td>4</td>
+          <td>Skakel as jy hulp nodig het.</td>
+        </tr>
+        <tr>
+          <td>Oormerk pakkie</td>
+          <td>Toerusting</td>
+          <td>100</td>
+          <td>R 240</td>
+          <td>12</td>
+          <td>Vir basiese identifikasie.</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section card">
+    <h3>Voorraad (opsomming)</h3>
+
+    <div class="table-wrap">
+      <table class="table">
+        <thead>
+        <tr>
+          <th>Produk</th>
+          <th>In voorraad</th>
+          <th>Herbestel vlak</th>
+          <th>Status</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Bees voer</td>
+          <td>18</td>
+          <td>10</td>
+          <td>OK</td>
+        </tr>
+        <tr>
+          <td>Ontwurm middel (multi)</td>
+          <td>9</td>
+          <td>8</td>
+          <td>Hou dop</td>
+        </tr>
+        <tr>
+          <td>Kalwingsketting stel</td>
+          <td>4</td>
+          <td>3</td>
+          <td>Laag</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Bestelvorm</h3>
+    <p class="muted">Vul die vorm in om 'n bestelling te "simuleer". Geen data word gestuur nie.</p>
+
+    <form id="order-form" class="section">
+      <div class="form-grid">
+        <div>
+          <label for="order-name">Naam</label>
+          <input id="order-name" name="naam" type="text" required>
+        </div>
+
+        <div>
+          <label for="order-email">E-pos</label>
+          <input id="order-email" name="epos" type="email" required>
+        </div>
+
+        <div>
+          <label for="order-phone">Selfoon</label>
+          <input id="order-phone" name="selfoon" type="tel" placeholder="bv. 0821234567" required>
+        </div>
+
+        <div>
+          <label for="order-product">Produk</label>
+          <select id="order-product" name="produk" required>
+            <option value="">-- Kies --</option>
+            <option>Bees voer</option>
+            <option>Skaap lek</option>
+            <option>Ontwurm middel (multi)</option>
+            <option>Jodium spray</option>
+            <option>Kalwingsketting stel</option>
+            <option>Oormerk pakkie</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="order-qty">Hoeveelheid</label>
+          <input id="order-qty" type="number" min="1" value="1" required>
+        </div>
+      </div>
+
+      <button type="submit">Plaas bestelling</button>
+      <p id="order-status" class="muted">Status: gereed.</p>
+    </form>
+  </section>
+
+  <section class="section card">
+    <h3>mandjie</h3>
+
+    <div class="table-wrap">
+      <table class="table">
+        <thead>
+        <tr>
+          <th>Produk</th>
+          <th>Hoeveelheid</th>
+          <th>Prys</th>
+          <th>Totaal</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td colspan="4" class="muted">Geen items in mandjie nie...</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p><strong>Totale bedrag: R 0</strong></p>
+  </section>
+</main>
+
+<footer>
+  <p><strong>Veedragtigheid Berekenaar</strong></p>
+  <p>© 2026 MG Beukes</p>
+</footer>
+
+</body>
+</html>
